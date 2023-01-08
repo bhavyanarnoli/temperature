@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
+
+		<title>Weather App</title>
+	</head>
+	<body>
+		<h1>Weather App</h1>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">Weather App</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						
+						<li class="dropdown">
+				        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    About this App </a>
+				
+				<ul class="dropdown-menu" aria-labelledby= "dropdownMenuLink">
+					<a class="dropdown-item" href="#">New</a>
+					<a class="dropdown-item" href="#"> Old</a>
+					<a class="dropdown-item" href="#"> Moderate</a>
+				</ul>
+				</li>
+						<li class="nav-item">
+							<a class="nav-link " >Usage guide </a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input id="city" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit" >Search</button>
+					</form>
+				</div>
+			</nav>
+			<div class="pricing-header px-1 py-2 pt-md-5 pb-md-2 mx-auto text-center">
+				<h1 class="display-4 font-weight-bold"><span id="cityName" ></span>'s Temperature </h1>
+			</div>
+			<div class="container">
+				<div class="card-deck mb-3 text-center">
+					<div class="card mb-4 shadow-sm">
+						<div class="card-header">
+							<h4 class="my-0 font-weight-medium">Temperature</h4>
+						</div>
+						<div class="card-body">
+							<h1 class="card-title pricing-card-title"><span id="temp" ></span><small class="text-muted"> &#8451</small></h1>
+							<ul class="list-unstyled mt-3 mb-4">
+								<li>Wind_Degrees is <span id="wind_degrees"></span></li>
+								<li>sun rise is at <span id="sunrise"></span></li>
+								<li>sunset is at<span id="sunset"></span></li>
+							</ul>
+							<button type="button" class="btn btn-lg btn-block btn-outline-primary">Last 15 days Weather</button>
+						</div>
+					</div>
+					<div class="card mb-4 shadow-sm">
+						<div class="card-header">
+							<h4 class="my-0 font-weight-medium">Feels Like</h4>
+						</div>
+						<div class="card-body">
+							<h1 class="card-title pricing-card-title"> <span id="feels_like2"></span>   <small class="text-muted"> &#8451</small></h1>
+							<ul class="list-unstyled mt-3 mb-4">
+								<li> Feels like <span id="feels_like"> </span> <small class="text-muted"> &#8451</small></li>
+								<li>Cloud PCT is <span id="cloud_pct"></span></li>
+								<li>Wind Speed is <span id="wind_speed"></span><small class="text-muted">km/h</small></li>
+
+							</ul>
+							<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+						</div>
+					</div>
+					<div class="card mb-4 shadow-sm">
+						<div class="card-header">
+							<h4 class="my-0 font-weight-medium">Humidity Info</h4>
+						</div>
+						<div class="card-body">
+							<h1 class="card-title pricing-card-title"><span id="humidity2" ></span> <small class="text-muted">%</small></h1>
+							<ul class="list-unstyled mt-3 mb-4">
+								<li> Humidity is <span id="humidity" ></span> <small class="text-muted">%</small></li>
+								<li> Max Temperature is <span id="max_temp" > </span> <small class="text-muted"> &#8451</small></li>
+								<li> Min Temperature is <span id="min_temp" > </span>  <small class="text-muted"> &#8451</small></li>
+								
+							</ul>
+							<button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+						</div>
+					</div>
+				</div>
+				<table class="table">
+					<thead>
+						<tr>
+							
+							<th scope="col" > Cities </th>
+							<th scope="col"> Cloud_Pct </th>
+							<th scope="col">Feels_Like </th>
+							<th scope="col"> Humidity </th>
+							<th scope="col"> Max_Temp </th>
+							<th scope="col">Min_Temp </th>
+							<th scope="col">Sunrise </th>
+							<th scope ="col">Sunset </th>
+							<th scope ="col">Temp </th>
+							<th scope="col">Wind_Degrees </th>
+							<th scope ="col">Wind_Speed </th>
+
+						</tr>
+					</thead>
+					<tbody>
+						
+
+						
+						
+							<th scope="row">Delhi</th>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>							
+							
+							
+						</tr>
+						<tr>
+							<th scope="row">Lucknow</th>
+							
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							
+							
+						</tr>
+						<tr>
+							<th scope="row">Bombay</th>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							
+						</tr>
+						<tr>
+							<th scope="row">Seattle</th>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							
+						</tr><tr>
+							<th scope="row">Spain</th>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							
+						</tr>
+						<tr>
+							<th scope="row">France</th>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+							<td> 6</td>
+										
+						</tr>
+					</tbody>
+				</table>
+				</footer>
+			</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src= "script.js" ></script>
+
+	
+	</body>
+</html>
+
